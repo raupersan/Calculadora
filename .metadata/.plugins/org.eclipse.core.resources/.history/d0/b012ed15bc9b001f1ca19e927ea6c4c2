@@ -52,8 +52,7 @@ public class Main {
 		System.out.println("Introduce el segundo operador");
 		op2 = sc.nextDouble();
 
-		resultado=calcular(op1, op2, operacion);
-		System.out.println("El resultado  de tu operación es: " + resultado);
+		calcular(op1, op2, operacion);
 	}
 
 }
