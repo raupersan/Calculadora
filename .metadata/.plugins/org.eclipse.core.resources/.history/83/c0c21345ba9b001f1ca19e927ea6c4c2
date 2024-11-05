@@ -1,0 +1,23 @@
+package básica;
+
+import java.util.Scanner;
+
+public class Main {
+	 
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	double op1, op2, resultado;
+	int operacion;
+	
+	System.out.println("###############");
+	System.out.println("##CALCULADORA##");
+	System.out.println("###############");
+
+	System.out.println("¿Qué operación quieres realizar?");
+	operacion=sc.nextInt();
+	System.out.println("Introduce el primer operador");
+	
+	}
+
+}
