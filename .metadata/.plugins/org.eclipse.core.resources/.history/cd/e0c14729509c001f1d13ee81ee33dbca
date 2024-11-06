@@ -1,0 +1,84 @@
+package interfaz;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+
+public class Main {
+
+	private JFrame frame;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Main window = new Main();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public Main() {
+		initialize();
+	}
+
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 316, 501);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 219, 300, 243);
+		frame.getContentPane().add(panel);
+		panel.setLayout(new GridLayout(6, 4, 0, 0));
+		
+		JButton uno = new JButton("New button");
+		panel.add(uno);
+		JButton dos = new JButton("New button");
+		panel.add(dos);
+		JButton tres = new JButton("New button");
+		panel.add(tres);
+		JButton cuatro = new JButton("New button");
+		panel.add(cuatro);
+		JButton cinco = new JButton("New button");
+		panel.add(cinco);
+		JButton seis = new JButton("New button");
+		panel.add(seis);
+		JButton siete = new JButton("New button");
+		panel.add(siete);
+		JButton ocho = new JButton("New button");
+		panel.add(ocho);
+		JButton nueve = new JButton("New button");
+		panel.add(nueve);
+		JButton diez = new JButton("New button");
+		panel.add(diez);
+		JButton z = new JButton("New button");
+		panel.add(z);
+		JButton a = new JButton("New button");
+		panel.add(a);
+		JButton b = new JButton("New button");
+		panel.add(b);
+		JButton c = new JButton("New button");
+		panel.add(c);
+		JButton d = new JButton("New button");
+		panel.add(d);
+		JButton e = new JButton("New button");
+		panel.add(e);
+		JButton f = new JButton("New button");
+		panel.add(g);
+		JButton g = new JButton("New button");
+		panel.add(f);	
+		JButton h = new JButton("New button");
+		panel.add(h);
+		JButton i = new JButton("New button");
+		panel.add(i);
+		
+	}
+}
